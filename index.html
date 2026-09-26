@@ -1,0 +1,955 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Clínica del Pie Muñiz Villa — Podología en Gijón</title>
+<link rel="icon" type="image/png" href="data:image/png;base64,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">
+<meta name="description" content="Clínica del Pie Muñiz Villa. Podología en Gijón con Adrián Muñiz Villa, podólogo colegiado. Escuchar para sanar.">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,500;0,600;0,700;1,500;1,600&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+
+<style>
+  :root{
+    --bg:#FAFAF8;
+    --navy:#1A2E44;
+    --blue:#4A90B8;
+    --gold:#C9A96E;
+    --green:#7EB641;
+    --gray-dot:#444;
+    --white:#fff;
+  }
+  *{margin:0;padding:0;box-sizing:border-box;}
+  html{scroll-behavior:smooth;}
+  body{
+    font-family:'Inter',sans-serif;
+    background:var(--bg);
+    color:var(--navy);
+    overflow-x:hidden;
+    -webkit-font-smoothing:antialiased;
+  }
+  img{display:block;max-width:100%;}
+  a{text-decoration:none;color:inherit;}
+  ul{list-style:none;}
+  .container{
+    max-width:1180px;
+    margin:0 auto;
+    padding:0 24px;
+  }
+  h1,h2,h3{font-family:'Playfair Display',serif;line-height:1.15;}
+  .eyebrow{
+    font-size:.78rem;
+    letter-spacing:.18em;
+    text-transform:uppercase;
+    color:var(--blue);
+    font-weight:700;
+    margin-bottom:10px;
+    display:block;
+  }
+  .section-title{
+    font-size:clamp(2rem,4.5vw,2.9rem);
+    color:var(--navy);
+    margin-bottom:14px;
+  }
+  .section-sub{
+    font-size:1.05rem;
+    color:#5a6b7d;
+    max-width:520px;
+  }
+  .section-head{
+    text-align:center;
+    margin:0 auto 56px;
+    max-width:620px;
+  }
+  section{padding:96px 0;}
+  .btn{
+    display:inline-flex;
+    align-items:center;
+    justify-content:center;
+    gap:10px;
+    padding:16px 34px;
+    border-radius:100px;
+    font-weight:700;
+    font-size:.98rem;
+    cursor:pointer;
+    border:2px solid transparent;
+    transition:transform .25s ease, box-shadow .25s ease, background .25s ease, color .25s ease;
+    white-space:nowrap;
+  }
+  .btn:hover{transform:translateY(-2px);}
+  .btn-solid{background:var(--white);color:var(--navy);}
+  .btn-solid:hover{box-shadow:0 12px 28px rgba(0,0,0,.18);}
+  .btn-outline{background:transparent;color:var(--white);border-color:rgba(255,255,255,.7);}
+  .btn-outline:hover{background:rgba(255,255,255,.12);}
+
+  /* ===== NAVBAR ===== */
+  header{
+    position:fixed;
+    top:0;left:0;right:0;
+    z-index:1000;
+    padding:18px 0;
+    transition:background .35s ease, box-shadow .35s ease, padding .35s ease;
+  }
+  header.scrolled{
+    background:rgba(250,250,248,.92);
+    backdrop-filter:blur(14px);
+    -webkit-backdrop-filter:blur(14px);
+    box-shadow:0 4px 22px rgba(26,46,68,.08);
+    padding:12px 0;
+  }
+  .nav-inner{
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+  }
+  .nav-brand{
+    display:flex;
+    align-items:center;
+    gap:12px;
+  }
+  .logo-badge{
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    background-color:#fff;
+    background-image:url(data:image/png;base64,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);
+    background-repeat:no-repeat;
+    background-position:center;
+    background-size:72%;
+    border-radius:50%;
+    border:1.5px solid #e3e3de;
+    overflow:hidden;
+    flex-shrink:0;
+  }
+  .logo-badge--nav{width:44px;height:44px;}
+  .logo-badge--hero{width:118px;height:118px;margin-bottom:30px;}
+  .logo-badge--footer{width:58px;height:58px;margin:0 auto 18px;}
+  .nav-brand span{
+    font-family:'Playfair Display',serif;
+    font-weight:600;
+    font-size:1.08rem;
+    color:var(--navy);
+    transition:color .3s ease;
+  }
+  header:not(.scrolled) .nav-brand span{color:var(--white);}
+  .nav-links{
+    display:flex;
+    gap:38px;
+    align-items:center;
+  }
+  .nav-links a{
+    font-weight:600;
+    font-size:.92rem;
+    color:var(--navy);
+    position:relative;
+    transition:color .3s ease;
+  }
+  header:not(.scrolled) .nav-links a{color:var(--white);}
+  .nav-links a::after{
+    content:'';
+    position:absolute;left:0;bottom:-4px;
+    width:0;height:2px;background:var(--blue);
+    transition:width .3s ease;
+  }
+  .nav-links a:hover::after{width:100%;}
+  .nav-cta{
+    background:var(--navy);
+    color:var(--white)!important;
+    padding:11px 24px;
+    border-radius:100px;
+    font-size:.88rem!important;
+  }
+  header:not(.scrolled) .nav-cta{background:var(--white);color:var(--navy)!important;}
+  .burger{
+    display:none;
+    flex-direction:column;
+    gap:5px;
+    cursor:pointer;
+    z-index:1100;
+    background:none;border:none;
+  }
+  .burger span{
+    width:26px;height:2px;background:var(--navy);
+    transition:all .3s ease;
+  }
+  header:not(.scrolled) .burger span{background:var(--white);}
+  header.menu-open .burger span{background:var(--navy);}
+
+  .mobile-menu{
+    position:fixed;
+    top:0;right:0;
+    width:78%;max-width:340px;height:100vh;
+    background:var(--white);
+    box-shadow:-10px 0 40px rgba(0,0,0,.15);
+    transform:translateX(100%);
+    transition:transform .4s cubic-bezier(.7,0,.2,1);
+    z-index:1050;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    padding:40px;
+    gap:28px;
+  }
+  .mobile-menu.open{transform:translateX(0);}
+  .mobile-menu a{
+    font-family:'Playfair Display',serif;
+    font-size:1.7rem;
+    color:var(--navy);
+    font-weight:600;
+  }
+  .menu-overlay{
+    position:fixed;inset:0;
+    background:rgba(26,46,68,.4);
+    z-index:1040;
+    opacity:0;pointer-events:none;
+    transition:opacity .35s ease;
+  }
+  .menu-overlay.open{opacity:1;pointer-events:all;}
+
+  /* ===== HERO ===== */
+  .hero{
+    min-height:100vh;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    position:relative;
+    text-align:center;
+    padding:140px 24px 80px;
+    overflow:hidden;
+  }
+  .hero-bg{
+    position:absolute;inset:0;
+    background-image:url('https://images.unsplash.com/photo-1545463913-5083aa7359a6?auto=format&fit=crop&w=2000&q=80');
+    background-size:cover;
+    background-position:center;
+    transform:scale(1.08);
+  }
+  .hero-overlay{
+    position:absolute;inset:0;
+    background:linear-gradient(180deg, rgba(26,46,68,.72), rgba(26,46,68,.82) 60%, rgba(26,46,68,.92));
+  }
+  .hero-content{
+    position:relative;z-index:2;
+    display:flex;flex-direction:column;align-items:center;
+    max-width:780px;
+  }
+  .hero-phrase{
+    font-family:'Playfair Display',serif;
+    font-style:italic;
+    font-weight:600;
+    color:#fff;
+    font-size:clamp(2.3rem,6.5vw,4.4rem);
+    line-height:1.12;
+    margin-bottom:20px;
+  }
+  .hero-subtitle{
+    color:rgba(255,255,255,.82);
+    letter-spacing:.22em;
+    text-transform:uppercase;
+    font-size:.82rem;
+    font-weight:600;
+    margin-bottom:42px;
+  }
+  .hero-ctas{
+    display:flex;gap:16px;flex-wrap:wrap;justify-content:center;
+  }
+
+  /* ===== SOBRE ADRIAN ===== */
+  .about{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:70px;
+    align-items:center;
+  }
+  .about-img-wrap{
+    border-radius:20px;
+    overflow:hidden;
+    box-shadow:0 30px 60px -20px rgba(26,46,68,.35);
+  }
+  .about-img-wrap img{
+    width:100%;height:520px;object-fit:cover;
+    transition:transform .6s ease;
+  }
+  .about-img-wrap:hover img{transform:scale(1.06);}
+  .about-text h2{
+    font-size:clamp(1.9rem,3.6vw,2.6rem);
+    color:var(--navy);
+    margin-bottom:6px;
+  }
+  .about-role{
+    color:var(--blue);
+    font-weight:700;
+    font-size:.9rem;
+    letter-spacing:.08em;
+    text-transform:uppercase;
+    margin-bottom:22px;
+    display:block;
+  }
+  .about-text p{
+    font-size:1.05rem;
+    line-height:1.75;
+    color:#3f5064;
+    margin-bottom:28px;
+  }
+  .about-badges{
+    display:flex;
+    gap:14px;
+    flex-wrap:wrap;
+    margin-bottom:24px;
+  }
+  .badge-check{
+    display:flex;align-items:center;gap:8px;
+    background:#fff;
+    border:1px solid #e6e6e2;
+    padding:10px 16px;
+    border-radius:100px;
+    font-size:.88rem;
+    font-weight:600;
+    color:var(--navy);
+  }
+  .badge-check svg{width:16px;height:16px;flex-shrink:0;color:var(--green);}
+  .badge-authority{
+    display:flex;
+    align-items:center;
+    gap:14px;
+    background:#FBF3E3;
+    border:1px solid #ecd9ae;
+    padding:18px 22px;
+    border-radius:14px;
+  }
+  .badge-authority .stars{color:var(--gold);font-size:1.2rem;letter-spacing:2px;}
+  .badge-authority span{font-weight:700;color:var(--navy);font-size:.95rem;}
+
+  /* ===== SERVICIOS ===== */
+  .services-grid{
+    display:grid;
+    grid-template-columns:repeat(2,1fr);
+    gap:20px;
+  }
+  .service-card{
+    background:#fff;
+    border:1px solid #eeeeea;
+    border-radius:16px;
+    padding:30px 24px;
+    transition:transform .3s ease, box-shadow .3s ease;
+  }
+  .service-card:hover{
+    transform:translateY(-6px);
+    box-shadow:0 22px 40px -18px rgba(26,46,68,.25);
+    border-color:transparent;
+  }
+  .service-icon{
+    width:46px;height:46px;
+    border-radius:12px;
+    background:#EAF2F6;
+    display:flex;align-items:center;justify-content:center;
+    margin-bottom:18px;
+  }
+  .service-icon svg{width:24px;height:24px;color:var(--blue);}
+  .service-card h3{
+    font-family:'Inter',sans-serif;
+    font-size:1.02rem;
+    font-weight:700;
+    color:var(--navy);
+    margin-bottom:8px;
+  }
+  .service-card p{
+    font-size:.9rem;
+    color:#647486;
+    line-height:1.55;
+    margin-bottom:14px;
+  }
+  .service-price{
+    display:inline-block;
+    background:var(--green);
+    color:#fff;
+    font-size:.78rem;
+    font-weight:700;
+    padding:5px 12px;
+    border-radius:100px;
+  }
+
+  /* ===== FRASE SEPARADORA ===== */
+  .quote-section{
+    background:var(--navy);
+    padding:120px 24px;
+    text-align:center;
+  }
+  .quote-section p{
+    font-family:'Playfair Display',serif;
+    font-style:italic;
+    font-weight:500;
+    color:#fff;
+    font-size:clamp(1.6rem,4vw,2.7rem);
+    max-width:820px;
+    margin:0 auto;
+    line-height:1.35;
+  }
+
+  /* ===== RESEÑAS ===== */
+  .reviews-grid{
+    display:grid;
+    grid-template-columns:repeat(2,1fr);
+    gap:22px;
+  }
+  .review-card{
+    background:#fff;
+    border-radius:16px;
+    padding:28px;
+    box-shadow:0 10px 30px -14px rgba(26,46,68,.14);
+  }
+  .review-top{
+    display:flex;align-items:center;gap:12px;margin-bottom:14px;
+  }
+  .review-avatar{
+    width:46px;height:46px;border-radius:50%;
+    background:var(--navy);
+    color:#fff;font-weight:700;font-family:'Playfair Display',serif;
+    display:flex;align-items:center;justify-content:center;
+    font-size:1.1rem;flex-shrink:0;
+  }
+  .review-meta strong{display:block;font-size:.95rem;color:var(--navy);}
+  .review-meta .google-row{
+    display:flex;align-items:center;gap:5px;
+    font-size:.78rem;color:#8a97a5;margin-top:2px;
+  }
+  .review-stars{color:var(--gold);letter-spacing:2px;margin-bottom:10px;font-size:.95rem;}
+  .review-text{
+    font-style:italic;
+    color:#405062;
+    color:#40506b;
+    font-size:.94rem;
+    line-height:1.65;
+    margin-bottom:14px;
+  }
+  .review-date{font-size:.78rem;color:#a3aeb9;}
+
+  /* ===== CONTACTO ===== */
+  .contact-wrap{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:60px;
+  }
+  .contact-info-item{
+    display:flex;gap:16px;align-items:flex-start;
+    margin-bottom:26px;
+  }
+  .contact-info-item .ic{
+    width:44px;height:44px;border-radius:12px;
+    background:#EAF2F6;
+    display:flex;align-items:center;justify-content:center;
+    flex-shrink:0;
+  }
+  .contact-info-item .ic svg{width:20px;height:20px;color:var(--blue);}
+  .contact-info-item div p{font-size:.98rem;color:var(--navy);font-weight:600;}
+  .contact-info-item div span{font-size:.85rem;color:#748296;}
+  .maps-btn{
+    display:inline-flex;align-items:center;gap:8px;
+    margin-top:10px;
+    color:var(--blue);
+    font-weight:700;
+    font-size:.92rem;
+    border-bottom:2px solid var(--blue);
+    padding-bottom:2px;
+  }
+  .contact-ctas{display:flex;flex-direction:column;gap:16px;}
+  .cta-block{
+    display:flex;align-items:center;gap:14px;
+    padding:20px 26px;
+    border-radius:14px;
+    font-weight:700;
+    font-size:1rem;
+    color:#fff;
+    transition:transform .25s ease, filter .25s ease;
+  }
+  .cta-block:hover{transform:scale(1.02);filter:brightness(1.06);}
+  .cta-block svg{width:24px;height:24px;flex-shrink:0;}
+  .cta-whatsapp{background:#25D366;}
+  .cta-call{background:var(--navy);}
+  .cta-instagram{background:linear-gradient(135deg,#833AB4,#FD1D1D,#FCAF45);}
+
+  /* ===== FOOTER ===== */
+  footer{
+    background:#fff;
+    border-top:1px solid #eeeeea;
+    padding:56px 24px 30px;
+    text-align:center;
+  }
+  footer .footer-name{font-family:'Playfair Display',serif;font-weight:600;color:var(--navy);margin-bottom:18px;}
+  .footer-links{
+    display:flex;justify-content:center;gap:26px;
+    margin-bottom:22px;flex-wrap:wrap;
+  }
+  .footer-links a{font-size:.88rem;font-weight:600;color:#556274;}
+  .footer-links a:hover{color:var(--blue);}
+  .footer-icons{display:flex;justify-content:center;gap:18px;margin-bottom:22px;}
+  .footer-icons a{
+    width:38px;height:38px;border-radius:50%;
+    background:#F2F2EE;
+    display:flex;align-items:center;justify-content:center;
+    transition:background .25s ease;
+  }
+  .footer-icons a:hover{background:#e4e4de;}
+  .footer-icons svg{width:17px;height:17px;color:var(--navy);}
+  footer .copyright{font-size:.82rem;color:#8b97a4;margin-bottom:6px;}
+  footer .credit{font-size:.76rem;color:#c3c9ce;}
+
+  /* ===== FLOATING BUTTONS ===== */
+  .float-btn{
+    position:fixed;
+    bottom:26px;
+    width:60px;height:60px;
+    border-radius:50%;
+    display:flex;align-items:center;justify-content:center;
+    box-shadow:0 10px 26px rgba(0,0,0,.25);
+    z-index:900;
+    cursor:pointer;
+  }
+  .float-btn svg{width:28px;height:28px;}
+  .float-whatsapp{
+    right:26px;
+    background:#25D366;
+  }
+  .float-instagram{
+    left:26px;
+    background:linear-gradient(135deg,#833AB4,#FD1D1D,#FCAF45);
+  }
+  .float-tooltip{
+    position:absolute;
+    bottom:70px;
+    background:var(--navy);
+    color:#fff;
+    padding:7px 13px;
+    border-radius:8px;
+    font-size:.78rem;
+    font-weight:600;
+    white-space:nowrap;
+    opacity:0;
+    transform:translateY(6px);
+    transition:opacity .25s ease, transform .25s ease;
+    pointer-events:none;
+  }
+  .float-whatsapp .float-tooltip{right:0;}
+  .float-instagram .float-tooltip{left:0;}
+  .float-btn:hover .float-tooltip{opacity:1;transform:translateY(0);}
+  @keyframes pulseRing{
+    0%{box-shadow:0 0 0 0 rgba(37,211,102,.55);}
+    100%{box-shadow:0 0 0 22px rgba(37,211,102,0);}
+  }
+  .float-whatsapp{animation:pulseRing 15s ease-out infinite;}
+
+  /* ===== RESPONSIVE ===== */
+  @media (max-width:900px){
+    .nav-links{display:none;}
+    .burger{display:flex;}
+    .about,.contact-wrap{grid-template-columns:1fr;gap:44px;}
+    .about-img-wrap img{height:380px;}
+    .services-grid{grid-template-columns:repeat(2,1fr);}
+    .reviews-grid{
+      display:flex;
+      overflow-x:auto;
+      scroll-snap-type:x mandatory;
+      gap:16px;
+      padding-bottom:10px;
+      margin:0 -24px;
+      padding-left:24px;
+      padding-right:24px;
+    }
+    .review-card{min-width:82%;scroll-snap-align:start;}
+    section{padding:70px 0;}
+  }
+  @media (max-width:560px){
+    .services-grid{grid-template-columns:repeat(2,1fr);gap:14px;}
+    .service-card{padding:22px 16px;}
+    .hero-ctas{flex-direction:column;width:100%;}
+    .hero-ctas .btn{width:100%;}
+    .section-head{margin-bottom:38px;}
+  }
+</style>
+</head>
+<body>
+
+<!-- ============ NAVBAR ============ -->
+<header id="siteHeader">
+  <div class="container nav-inner">
+    <div class="nav-brand">
+      <span class="logo-badge logo-badge--nav" role="img" aria-label="Clínica del Pie Muñiz Villa"></span>
+      <span>Clínica del Pie<br>Muñiz Villa</span>
+    </div>
+    <nav class="nav-links">
+      <a href="#servicios">Servicios</a>
+      <a href="#valoraciones">Valoraciones</a>
+      <a href="#contacto">Contacto</a>
+      <a href="#contacto" class="nav-cta">Pedir cita</a>
+    </nav>
+    <button class="burger" id="burgerBtn" aria-label="Abrir menú">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</header>
+
+<div class="menu-overlay" id="menuOverlay"></div>
+<div class="mobile-menu" id="mobileMenu">
+  <a href="#servicios">Servicios</a>
+  <a href="#valoraciones">Valoraciones</a>
+  <a href="#contacto">Contacto</a>
+</div>
+
+<!-- ============ HERO ============ -->
+<section class="hero">
+  <div class="hero-bg"></div>
+  <div class="hero-overlay"></div>
+  <div class="hero-content">
+    <span class="logo-badge logo-badge--hero" id="heroLogo" role="img" aria-label="Clínica del Pie Muñiz Villa"></span>
+    <h1 class="hero-phrase" id="heroPhrase">Escuchar para sanar</h1>
+    <p class="hero-subtitle" id="heroSubtitle">Podología · Gijón</p>
+    <div class="hero-ctas" id="heroCtas">
+      <a href="#contacto" class="btn btn-solid">Pedir cita</a>
+      <a href="#servicios" class="btn btn-outline">Ver servicios</a>
+    </div>
+  </div>
+</section>
+
+<!-- ============ SOBRE ADRIAN ============ -->
+<section class="about-section">
+  <div class="container about">
+    <div class="about-img-wrap" id="aboutImg">
+      <img src="https://images.unsplash.com/photo-1706777227772-629b1cdb8a9f?auto=format&fit=crop&w=1200&q=80" alt="Adrián Muñiz Villa atendiendo a un paciente en consulta">
+    </div>
+    <div class="about-text" id="aboutText">
+      <span class="eyebrow">Sobre nosotros</span>
+      <h2>Adrián Muñiz Villa</h2>
+      <span class="about-role">Podólogo Colegiado · Gijón</span>
+      <p>Adrián Muñiz Villa es podólogo colegiado con consulta en el corazón de Gijón. Su enfoque parte de una premisa sencilla: antes de tratar, escuchar. Cada pie tiene su historia, y cada tratamiento empieza por entenderla.</p>
+      <div class="about-badges">
+        <span class="badge-check"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>Solo pacientes privados</span>
+        <span class="badge-check"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>Pago con tarjeta</span>
+      </div>
+      <div class="badge-authority">
+        <span class="stars">★★★★★</span>
+        <span>43 valoraciones en Google</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ SERVICIOS ============ -->
+<section id="servicios">
+  <div class="container">
+    <div class="section-head">
+      <span class="eyebrow">Lo que hacemos</span>
+      <h2 class="section-title">Nuestros servicios</h2>
+      <p class="section-sub" style="margin:0 auto;">Tratamientos personalizados para cada paciente</p>
+    </div>
+    <div class="services-grid" id="servicesGrid">
+
+      <div class="service-card">
+        <div class="service-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="7"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg></div>
+        <h3>Primera visita</h3>
+        <p>Exploración completa y diagnóstico personalizado</p>
+        <span class="service-price">30€</span>
+      </div>
+
+      <div class="service-card">
+        <div class="service-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 6h18M3 12h18M3 18h18"/></svg></div>
+        <h3>Quiropodia</h3>
+        <p>Cuidado profesional de callosidades, durezas y uñas</p>
+      </div>
+
+      <div class="service-card">
+        <div class="service-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 3v18h18"/><path d="M7 15l4-6 4 3 5-8"/></svg></div>
+        <h3>Estudio de la pisada</h3>
+        <p>Análisis biomecánico para detectar alteraciones</p>
+        <span class="service-price">70€</span>
+      </div>
+
+      <div class="service-card">
+        <div class="service-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="5" r="2"/><path d="M12 7v6l-4 8M12 13l4 8M8 13h8"/></svg></div>
+        <h3>Análisis de la marcha</h3>
+        <p>Evaluación completa del patrón de movimiento</p>
+        <span class="service-price">70€</span>
+      </div>
+
+      <div class="service-card">
+        <div class="service-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 13c0-4 3-8 8-9 5 1 8 5 8 9-3 1-5 3-5 6H9c0-3-2-5-5-6z"/></svg></div>
+        <h3>Plantillas a medida</h3>
+        <p>Ortesis plantares personalizadas según tu pisada</p>
+        <span class="service-price">120€</span>
+      </div>
+
+      <div class="service-card">
+        <div class="service-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2l1.8 5.6H20l-4.6 3.3 1.8 5.6L12 13.2 6.8 16.5l1.8-5.6L4 7.6h6.2z"/></svg></div>
+        <h3>Cirugía de uña encarnada</h3>
+        <p>Tratamiento definitivo, sin dolor residual</p>
+      </div>
+
+      <div class="service-card">
+        <div class="service-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><circle cx="12" cy="12" r="3"/></svg></div>
+        <h3>Papiloma plantar</h3>
+        <p>Tratamiento efectivo de verrugas plantares</p>
+      </div>
+
+      <div class="service-card">
+        <div class="service-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2v20M4 8l8-6 8 6M4 8v8l8 6 8-6V8"/></svg></div>
+        <h3>Infiltraciones y PRP</h3>
+        <p>Técnicas avanzadas de regeneración tisular</p>
+      </div>
+
+      <div class="service-card">
+        <div class="service-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M19 14c1.5-1.5 2-3 2-4.5A4.5 4.5 0 0016.5 5c-1.5 0-2.5.5-4.5 2.5C10 5.5 9 5 7.5 5A4.5 4.5 0 003 9.5c0 1.5.5 3 2 4.5l7 7 7-7z"/></svg></div>
+        <h3>Pie diabético</h3>
+        <p>Unidad especializada en cuidado y curación de úlceras crónicas</p>
+      </div>
+
+      <div class="service-card">
+        <div class="service-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="8" width="18" height="8" rx="2"/><path d="M7 8v8M17 8v8"/></svg></div>
+        <h3>Vendaje funcional</h3>
+        <p>Soporte biomecánico para lesiones deportivas y crónicas</p>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ============ FRASE SEPARADORA ============ -->
+<section class="quote-section">
+  <p id="quoteText">"Cada paso que das merece ser cuidado con atención y precisión."</p>
+</section>
+
+<!-- ============ RESEÑAS ============ -->
+<section id="valoraciones">
+  <div class="container">
+    <div class="section-head">
+      <span class="eyebrow">Confianza</span>
+      <h2 class="section-title">Lo que dicen nuestros pacientes</h2>
+      <p class="section-sub" style="margin:0 auto;">Valoraciones reales verificadas en Google</p>
+    </div>
+    <div class="reviews-grid" id="reviewsGrid">
+
+      <div class="review-card">
+        <div class="review-top">
+          <div class="review-avatar">R</div>
+          <div class="review-meta">
+            <strong>Raul CB</strong>
+            <span class="google-row">
+              <svg width="13" height="13" viewBox="0 0 48 48"><path fill="#FFC107" d="M43.6 20.5H42V20H24v8h11.3c-1.6 4.6-6 8-11.3 8-6.6 0-12-5.4-12-12s5.4-12 12-12c3.1 0 5.8 1.1 8 3l6-6C34.9 6.1 29.8 4 24 4 12.9 4 4 12.9 4 24s8.9 20 20 20 20-8.9 20-20c0-1.3-.1-2.7-.4-3.5z"/><path fill="#FF3D00" d="M6.3 14.7l6.6 4.8C14.6 16 19 13 24 13c3.1 0 5.8 1.1 8 3l6-6C34.9 6.1 29.8 4 24 4c-7.6 0-14.1 4.3-17.7 10.7z"/><path fill="#4CAF50" d="M24 44c5.7 0 10.8-2.2 14.6-5.7l-6.7-5.7C29.7 34.5 27 35.5 24 35.5c-5.3 0-9.7-3.4-11.3-8.1l-6.6 5.1C9.9 39.6 16.4 44 24 44z"/><path fill="#1976D2" d="M43.6 20.5H42V20H24v8h11.3c-.8 2.3-2.2 4.2-4.1 5.6l6.7 5.7C41.9 36 44 30.6 44 24c0-1.3-.1-2.7-.4-3.5z"/></svg>
+              Google
+            </span>
+          </div>
+        </div>
+        <div class="review-stars">★★★★★</div>
+        <p class="review-text">"Muy buena atención. Adrián es un gran profesional, se nota que ama lo que hace. La clínica está impecable y el trato fue de 10. Totalmente recomendable"</p>
+        <span class="review-date">Hace un año</span>
+      </div>
+
+      <div class="review-card">
+        <div class="review-top">
+          <div class="review-avatar">L</div>
+          <div class="review-meta">
+            <strong>Lucía Mañanes Peláez</strong>
+            <span class="google-row">
+              <svg width="13" height="13" viewBox="0 0 48 48"><path fill="#FFC107" d="M43.6 20.5H42V20H24v8h11.3c-1.6 4.6-6 8-11.3 8-6.6 0-12-5.4-12-12s5.4-12 12-12c3.1 0 5.8 1.1 8 3l6-6C34.9 6.1 29.8 4 24 4 12.9 4 4 12.9 4 24s8.9 20 20 20 20-8.9 20-20c0-1.3-.1-2.7-.4-3.5z"/><path fill="#FF3D00" d="M6.3 14.7l6.6 4.8C14.6 16 19 13 24 13c3.1 0 5.8 1.1 8 3l6-6C34.9 6.1 29.8 4 24 4c-7.6 0-14.1 4.3-17.7 10.7z"/><path fill="#4CAF50" d="M24 44c5.7 0 10.8-2.2 14.6-5.7l-6.7-5.7C29.7 34.5 27 35.5 24 35.5c-5.3 0-9.7-3.4-11.3-8.1l-6.6 5.1C9.9 39.6 16.4 44 24 44z"/><path fill="#1976D2" d="M43.6 20.5H42V20H24v8h11.3c-.8 2.3-2.2 4.2-4.1 5.6l6.7 5.7C41.9 36 44 30.6 44 24c0-1.3-.1-2.7-.4-3.5z"/></svg>
+              Google
+            </span>
+          </div>
+        </div>
+        <div class="review-stars">★★★★★</div>
+        <p class="review-text">"100% recomendable. Quedamos encantados con la rapidez y la profesionalidad. Un trato impecable!!!"</p>
+        <span class="review-date">Hace 7 meses</span>
+      </div>
+
+      <div class="review-card">
+        <div class="review-top">
+          <div class="review-avatar">N</div>
+          <div class="review-meta">
+            <strong>Nacho</strong>
+            <span class="google-row">
+              <svg width="13" height="13" viewBox="0 0 48 48"><path fill="#FFC107" d="M43.6 20.5H42V20H24v8h11.3c-1.6 4.6-6 8-11.3 8-6.6 0-12-5.4-12-12s5.4-12 12-12c3.1 0 5.8 1.1 8 3l6-6C34.9 6.1 29.8 4 24 4 12.9 4 4 12.9 4 24s8.9 20 20 20 20-8.9 20-20c0-1.3-.1-2.7-.4-3.5z"/><path fill="#FF3D00" d="M6.3 14.7l6.6 4.8C14.6 16 19 13 24 13c3.1 0 5.8 1.1 8 3l6-6C34.9 6.1 29.8 4 24 4c-7.6 0-14.1 4.3-17.7 10.7z"/><path fill="#4CAF50" d="M24 44c5.7 0 10.8-2.2 14.6-5.7l-6.7-5.7C29.7 34.5 27 35.5 24 35.5c-5.3 0-9.7-3.4-11.3-8.1l-6.6 5.1C9.9 39.6 16.4 44 24 44z"/><path fill="#1976D2" d="M43.6 20.5H42V20H24v8h11.3c-.8 2.3-2.2 4.2-4.1 5.6l6.7 5.7C41.9 36 44 30.6 44 24c0-1.3-.1-2.7-.4-3.5z"/></svg>
+              Google
+            </span>
+          </div>
+        </div>
+        <div class="review-stars">★★★★★</div>
+        <p class="review-text">"Excelente profesional, totalmente recomendable. Volveré siempre que lo necesite. Gracias Adrián!"</p>
+        <span class="review-date">Hace 2 meses</span>
+      </div>
+
+      <div class="review-card">
+        <div class="review-top">
+          <div class="review-avatar">T</div>
+          <div class="review-meta">
+            <strong>Tina Suárez Jardón</strong>
+            <span class="google-row">
+              <svg width="13" height="13" viewBox="0 0 48 48"><path fill="#FFC107" d="M43.6 20.5H42V20H24v8h11.3c-1.6 4.6-6 8-11.3 8-6.6 0-12-5.4-12-12s5.4-12 12-12c3.1 0 5.8 1.1 8 3l6-6C34.9 6.1 29.8 4 24 4 12.9 4 4 12.9 4 24s8.9 20 20 20 20-8.9 20-20c0-1.3-.1-2.7-.4-3.5z"/><path fill="#FF3D00" d="M6.3 14.7l6.6 4.8C14.6 16 19 13 24 13c3.1 0 5.8 1.1 8 3l6-6C34.9 6.1 29.8 4 24 4c-7.6 0-14.1 4.3-17.7 10.7z"/><path fill="#4CAF50" d="M24 44c5.7 0 10.8-2.2 14.6-5.7l-6.7-5.7C29.7 34.5 27 35.5 24 35.5c-5.3 0-9.7-3.4-11.3-8.1l-6.6 5.1C9.9 39.6 16.4 44 24 44z"/><path fill="#1976D2" d="M43.6 20.5H42V20H24v8h11.3c-.8 2.3-2.2 4.2-4.1 5.6l6.7 5.7C41.9 36 44 30.6 44 24c0-1.3-.1-2.7-.4-3.5z"/></svg>
+              Google
+            </span>
+          </div>
+        </div>
+        <div class="review-stars">★★★★★</div>
+        <p class="review-text">"Cuando entré en la clínica lo primero que respiré fue un olor mezcla de frescor, salud, bienestar.... sensaciones positivas. El problema resuelto. El trato de Adrián impecable, Profesional y empático. Agradecida por todo 🙏"</p>
+        <span class="review-date">Hace 4 meses</span>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ============ CONTACTO ============ -->
+<section id="contacto">
+  <div class="container">
+    <div class="section-head">
+      <span class="eyebrow">Contacto</span>
+      <h2 class="section-title">Pide tu cita</h2>
+      <p class="section-sub" style="margin:0 auto;">Estamos en Gijón. Te atendemos de forma personalizada.</p>
+    </div>
+
+    <div class="contact-wrap">
+      <div class="contact-info" id="contactInfo">
+        <div class="contact-info-item">
+          <div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg></div>
+          <div>
+            <p>Calle Ramón Areces 15 Bajo</p>
+            <span>Gijón, 33211</span>
+            <br>
+            <a class="maps-btn" href="https://maps.google.com/?q=Calle+Ramón+Areces+15,+Gijón" target="_blank" rel="noopener">Cómo llegar →</a>
+          </div>
+        </div>
+        <div class="contact-info-item">
+          <div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07 19.5 19.5 0 01-6-6 19.79 19.79 0 01-3.07-8.67A2 2 0 014.11 2h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L8.09 9.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z"/></svg></div>
+          <div>
+            <p><a href="tel:+34609209552">609 209 552</a></p>
+            <span>Llámanos directamente</span>
+          </div>
+        </div>
+        <div class="contact-info-item">
+          <div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5"/><path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg></div>
+          <div>
+            <p><a href="https://www.instagram.com/clinicadelpiemv/" target="_blank" rel="noopener">@clinicadelpiemv</a></p>
+            <span>Síguenos en Instagram</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="contact-ctas" id="contactCtas">
+        <a class="cta-block cta-whatsapp" href="https://wa.me/34609209552" target="_blank" rel="noopener">
+          <svg viewBox="0 0 32 32" fill="currentColor"><path d="M16.001 3C9.373 3 4 8.373 4 15c0 2.362.688 4.566 1.875 6.417L4 29l7.771-1.85A11.94 11.94 0 0016 27c6.627 0 12-5.373 12-12S22.628 3 16.001 3zm6.994 17.06c-.291.822-1.44 1.505-2.361 1.702-.628.132-1.448.238-4.209-.905-3.534-1.463-5.813-5.045-5.99-5.28-.17-.235-1.437-1.91-1.437-3.646 0-1.735.902-2.588 1.223-2.94.32-.352.7-.44.933-.44.234 0 .467.003.671.013.215.01.503-.082.787.6.291.7.988 2.415 1.075 2.59.087.176.146.381.03.615-.117.234-.176.38-.35.585-.176.206-.37.46-.528.618-.176.176-.36.366-.155.72.205.352.913 1.507 1.96 2.441 1.348 1.203 2.484 1.575 2.836 1.75.35.176.556.147.76-.088.206-.235.874-1.02 1.108-1.37.234-.352.468-.293.79-.176.32.117 2.033.96 2.383 1.135.35.176.583.264.67.41.088.147.088.85-.203 1.67z"/></svg>
+          Escríbenos por WhatsApp
+        </a>
+        <a class="cta-block cta-call" href="tel:+34609209552">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07 19.5 19.5 0 01-6-6 19.79 19.79 0 01-3.07-8.67A2 2 0 014.11 2h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L8.09 9.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z"/></svg>
+          Llamar: 609 209 552
+        </a>
+        <a class="cta-block cta-instagram" href="https://www.instagram.com/clinicadelpiemv/" target="_blank" rel="noopener">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5"/><path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
+          Síguenos en Instagram
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ FOOTER ============ -->
+<footer>
+  <span class="logo-badge logo-badge--footer" role="img" aria-label="Clínica del Pie Muñiz Villa"></span>
+  <p class="footer-name">Clínica del Pie Muñiz Villa</p>
+  <div class="footer-links">
+    <a href="#servicios">Servicios</a>
+    <a href="#valoraciones">Valoraciones</a>
+    <a href="#contacto">Contacto</a>
+  </div>
+  <div class="footer-icons">
+    <a href="tel:+34609209552" aria-label="Teléfono"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07 19.5 19.5 0 01-6-6 19.79 19.79 0 01-3.07-8.67A2 2 0 014.11 2h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L8.09 9.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z"/></svg></a>
+    <a href="https://wa.me/34609209552" target="_blank" rel="noopener" aria-label="WhatsApp"><svg viewBox="0 0 32 32" fill="currentColor"><path d="M16.001 3C9.373 3 4 8.373 4 15c0 2.362.688 4.566 1.875 6.417L4 29l7.771-1.85A11.94 11.94 0 0016 27c6.627 0 12-5.373 12-12S22.628 3 16.001 3zm6.994 17.06c-.291.822-1.44 1.505-2.361 1.702-.628.132-1.448.238-4.209-.905-3.534-1.463-5.813-5.045-5.99-5.28-.17-.235-1.437-1.91-1.437-3.646 0-1.735.902-2.588 1.223-2.94.32-.352.7-.44.933-.44.234 0 .467.003.671.013.215.01.503-.082.787.6.291.7.988 2.415 1.075 2.59.087.176.146.381.03.615-.117.234-.176.38-.35.585-.176.206-.37.46-.528.618-.176.176-.36.366-.155.72.205.352.913 1.507 1.96 2.441 1.348 1.203 2.484 1.575 2.836 1.75.35.176.556.147.76-.088.206-.235.874-1.02 1.108-1.37.234-.352.468-.293.79-.176.32.117 2.033.96 2.383 1.135.35.176.583.264.67.41.088.147.088.85-.203 1.67z"/></svg></a>
+    <a href="https://www.instagram.com/clinicadelpiemv/" target="_blank" rel="noopener" aria-label="Instagram"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5"/><path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg></a>
+  </div>
+  <p class="copyright">© 2026 Clínica del Pie Muñiz Villa — Gijón</p>
+  <p class="credit">Creada por Baxia Agency</p>
+</footer>
+
+<!-- ============ FLOATING BUTTONS ============ -->
+<a class="float-btn float-whatsapp" href="https://wa.me/34609209552" target="_blank" rel="noopener" aria-label="WhatsApp">
+  <span class="float-tooltip">Escríbenos</span>
+  <svg viewBox="0 0 32 32" fill="#fff"><path d="M16.001 3C9.373 3 4 8.373 4 15c0 2.362.688 4.566 1.875 6.417L4 29l7.771-1.85A11.94 11.94 0 0016 27c6.627 0 12-5.373 12-12S22.628 3 16.001 3zm6.994 17.06c-.291.822-1.44 1.505-2.361 1.702-.628.132-1.448.238-4.209-.905-3.534-1.463-5.813-5.045-5.99-5.28-.17-.235-1.437-1.91-1.437-3.646 0-1.735.902-2.588 1.223-2.94.32-.352.7-.44.933-.44.234 0 .467.003.671.013.215.01.503-.082.787.6.291.7.988 2.415 1.075 2.59.087.176.146.381.03.615-.117.234-.176.38-.35.585-.176.206-.37.46-.528.618-.176.176-.36.366-.155.72.205.352.913 1.507 1.96 2.441 1.348 1.203 2.484 1.575 2.836 1.75.35.176.556.147.76-.088.206-.235.874-1.02 1.108-1.37.234-.352.468-.293.79-.176.32.117 2.033.96 2.383 1.135.35.176.583.264.67.41.088.147.088.85-.203 1.67z"/></svg>
+</a>
+<a class="float-btn float-instagram" href="https://www.instagram.com/clinicadelpiemv/" target="_blank" rel="noopener" aria-label="Instagram">
+  <span class="float-tooltip">Síguenos en Instagram</span>
+  <svg viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5"/><path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
+</a>
+
+<script>
+gsap.registerPlugin(ScrollTrigger);
+
+/* ---- Navbar scroll state ---- */
+const header = document.getElementById('siteHeader');
+const onScroll = () => {
+  header.classList.toggle('scrolled', window.scrollY > 40);
+};
+window.addEventListener('scroll', onScroll);
+onScroll();
+
+/* ---- Mobile menu ---- */
+const burger = document.getElementById('burgerBtn');
+const mobileMenu = document.getElementById('mobileMenu');
+const overlay = document.getElementById('menuOverlay');
+function toggleMenu(open){
+  mobileMenu.classList.toggle('open', open);
+  overlay.classList.toggle('open', open);
+}
+burger.addEventListener('click', () => toggleMenu(!mobileMenu.classList.contains('open')));
+overlay.addEventListener('click', () => toggleMenu(false));
+document.querySelectorAll('.mobile-menu a').forEach(a => a.addEventListener('click', () => toggleMenu(false)));
+
+/* ---- Hero entrance animation ---- */
+const heroTl = gsap.timeline({defaults:{ease:'power2.out'}});
+heroTl
+  .from('#heroLogo', {opacity:0, scale:0.7, duration:0.8})
+  .from('#heroPhrase', {opacity:0, y:30, duration:0.6}, '-=0.35')
+  .from('#heroSubtitle', {opacity:0, y:20, duration:0.5}, '-=0.3')
+  .from('#heroCtas .btn', {opacity:0, y:20, duration:0.5, stagger:0.2}, '-=0.25');
+
+/* ---- Sobre Adrián ---- */
+gsap.from('#aboutImg', {
+  x:-60, opacity:0, duration:0.8, ease:'power2.out',
+  scrollTrigger:{trigger:'.about-section', start:'top 80%'}
+});
+gsap.from('#aboutText', {
+  x:60, opacity:0, duration:0.8, ease:'power2.out',
+  scrollTrigger:{trigger:'.about-section', start:'top 80%'}
+});
+
+/* ---- Servicios stagger ---- */
+gsap.from('#servicesGrid .service-card', {
+  opacity:0, y:30, duration:0.6, stagger:0.08, ease:'power2.out',
+  scrollTrigger:{trigger:'#servicesGrid', start:'top 85%'}
+});
+
+/* ---- Frase separadora ---- */
+gsap.from('#quoteText', {
+  opacity:0, y:24, duration:0.8, ease:'power2.out',
+  scrollTrigger:{trigger:'.quote-section', start:'top 75%'}
+});
+
+/* ---- Reseñas ---- */
+gsap.from('#reviewsGrid .review-card', {
+  opacity:0, scale:0.95, duration:0.6, stagger:0.1, ease:'power2.out',
+  scrollTrigger:{trigger:'#reviewsGrid', start:'top 85%'}
+});
+
+/* ---- Contacto ---- */
+gsap.from('#contactInfo', {
+  x:-40, opacity:0, duration:0.7, ease:'power2.out',
+  scrollTrigger:{trigger:'.contact-wrap', start:'top 80%'}
+});
+gsap.from('#contactCtas', {
+  x:40, opacity:0, duration:0.7, ease:'power2.out',
+  scrollTrigger:{trigger:'.contact-wrap', start:'top 80%'}
+});
+</script>
+
+</body>
+</html>
